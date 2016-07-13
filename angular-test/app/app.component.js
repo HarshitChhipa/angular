@@ -9,16 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var courses_component_1 = require('./gui/courses/courses.component');
-var authors_component_1 = require('./gui/authors/authors.component');
-var levels_component_1 = require('./gui/levels/levels.component');
+var courses_component_1 = require('./components/courses/courses.component');
+var authors_component_1 = require('./components/authors/authors.component');
+var levels_component_1 = require('./components/levels/levels.component');
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<h1>Hello Angular 3</h1>\n              <courses></courses>\n              <authors></authors>\n              <levels></levels>",
+            template: "<h1>List of Courses, Authors and Levels</h1>\n              <courses></courses>\n              <authors></authors>\n              <levels></levels>",
             directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent, levels_component_1.LevelsComponent]
         }), 
         __metadata('design:paramtypes', [])

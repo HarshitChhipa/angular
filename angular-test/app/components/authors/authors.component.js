@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var author_service_1 = require('../../services/authors/author.service');
+var auto_grow_directive_1 = require('../../directives/auto-grow.directive');
 var AuthorsComponent = (function () {
     function AuthorsComponent(authorService) {
         this.authors = authorService.getAuthors();
@@ -18,8 +19,9 @@ var AuthorsComponent = (function () {
     AuthorsComponent = __decorate([
         core_1.Component({
             selector: 'authors',
-            template: "\n            <h2>{{title}}</h2>\n            <ul>\n              <li *ngFor = \"let author of authors\">\n              This is an author with name {{author}}\n              </li>\n            </ul>\n            ",
-            providers: [author_service_1.AuthorService]
+            template: "\n            <h2>{{title}}</h2>\n            <input #inputAuthors type=\"text\" autoGrow />\n            <ul>\n              <li *ngFor = \"let author of authors\">\n              This is an author with name {{author}}\n              </li>\n            </ul>\n            ",
+            providers: [author_service_1.AuthorService],
+            directives: [auto_grow_directive_1.AutoGrowDirective]
         }), 
         __metadata('design:paramtypes', [author_service_1.AuthorService])
     ], AuthorsComponent);

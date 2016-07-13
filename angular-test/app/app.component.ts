@@ -1,11 +1,11 @@
 import {Component} from '@angular/core';
-import {CoursesComponent} from './gui/courses/courses.component';
-import {AuthorsComponent} from './gui/authors/authors.component';
-import {LevelsComponent} from './gui/levels/levels.component';
+import {CoursesComponent} from './components/courses/courses.component';
+import {AuthorsComponent} from './components/authors/authors.component';
+import {LevelsComponent} from './components/levels/levels.component';
 
 @Component({
     selector: 'my-app',
-    template: `<h1>Hello Angular 3</h1>
+    template: `<h1>List of Courses, Authors and Levels</h1>
               <courses></courses>
               <authors></authors>
               <levels></levels>`,
